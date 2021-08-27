@@ -1,12 +1,16 @@
 import Foundation
 import UIKit
 
+protocol ContactDisplaing: AnyObject {
+    func displaing(contacts: [String])
+}
+
 final class ContactViewController: UIViewController {
     // Quem for iniciar a view controller tem que passar o interactor.
     // Dentro da viewcontroller nao pode ter logica dentro dela
-    private let interactor: ContactInteractor
+    private let interactor: ContactInteracting
     
-    init(interactor: ContactInteractor) {
+    init(interactor: ContactInteracting) {
         self.interactor = interactor
         super.init(nibName: nil, bundle: nil)
     }
@@ -17,5 +21,12 @@ final class ContactViewController: UIViewController {
         super.viewDidLoad()
         
         interactor.fetchContact()
+    }
+}
+
+
+extension ContactViewController: ContactDisplaing {
+    func displaing(contacts: [String]) {
+        print("")
     }
 }

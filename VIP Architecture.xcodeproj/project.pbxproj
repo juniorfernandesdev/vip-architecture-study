@@ -15,6 +15,12 @@
 		B128E39626D7FD9D008DEAEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B128E39426D7FD9D008DEAEE /* LaunchScreen.storyboard */; };
 		B128E3A126D7FD9D008DEAEE /* VIP_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3A026D7FD9D008DEAEE /* VIP_ArchitectureTests.swift */; };
 		B128E3AC26D7FD9D008DEAEE /* VIP_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3AB26D7FD9D008DEAEE /* VIP_ArchitectureUITests.swift */; };
+		B128E3BB26D8001D008DEAEE /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3BA26D8001D008DEAEE /* ContactViewController.swift */; };
+		B128E3BD26D80088008DEAEE /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3BC26D80088008DEAEE /* ContactInteractor.swift */; };
+		B128E3BF26D8050B008DEAEE /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3BE26D8050B008DEAEE /* ContactService.swift */; };
+		B128E3C126D80864008DEAEE /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C026D80864008DEAEE /* ContactPresenter.swift */; };
+		B128E3C326D80B7D008DEAEE /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C226D80B7D008DEAEE /* ContactCoordinator.swift */; };
+		B128E3C526D80D8F008DEAEE /* ContactFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C426D80D8F008DEAEE /* ContactFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B128E3A726D7FD9D008DEAEE /* VIP ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIP ArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B128E3AB26D7FD9D008DEAEE /* VIP_ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIP_ArchitectureUITests.swift; sourceTree = "<group>"; };
 		B128E3AD26D7FD9D008DEAEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B128E3BA26D8001D008DEAEE /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		B128E3BC26D80088008DEAEE /* ContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
+		B128E3BE26D8050B008DEAEE /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
+		B128E3C026D80864008DEAEE /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
+		B128E3C226D80B7D008DEAEE /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
+		B128E3C426D80D8F008DEAEE /* ContactFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		B128E38826D7FD99008DEAEE /* VIP Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				B128E3B926D7FFF3008DEAEE /* ArchStudy */,
 				B128E38926D7FD99008DEAEE /* AppDelegate.swift */,
 				B128E38B26D7FD99008DEAEE /* SceneDelegate.swift */,
 				B128E38D26D7FD99008DEAEE /* ViewController.swift */,
@@ -126,6 +139,19 @@
 				B128E3AD26D7FD9D008DEAEE /* Info.plist */,
 			);
 			path = "VIP ArchitectureUITests";
+			sourceTree = "<group>";
+		};
+		B128E3B926D7FFF3008DEAEE /* ArchStudy */ = {
+			isa = PBXGroup;
+			children = (
+				B128E3BA26D8001D008DEAEE /* ContactViewController.swift */,
+				B128E3BC26D80088008DEAEE /* ContactInteractor.swift */,
+				B128E3BE26D8050B008DEAEE /* ContactService.swift */,
+				B128E3C026D80864008DEAEE /* ContactPresenter.swift */,
+				B128E3C226D80B7D008DEAEE /* ContactCoordinator.swift */,
+				B128E3C426D80D8F008DEAEE /* ContactFactory.swift */,
+			);
+			path = ArchStudy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B128E38E26D7FD99008DEAEE /* ViewController.swift in Sources */,
+				B128E3C526D80D8F008DEAEE /* ContactFactory.swift in Sources */,
+				B128E3BB26D8001D008DEAEE /* ContactViewController.swift in Sources */,
+				B128E3BF26D8050B008DEAEE /* ContactService.swift in Sources */,
+				B128E3C326D80B7D008DEAEE /* ContactCoordinator.swift in Sources */,
+				B128E3C126D80864008DEAEE /* ContactPresenter.swift in Sources */,
 				B128E38A26D7FD99008DEAEE /* AppDelegate.swift in Sources */,
 				B128E38C26D7FD99008DEAEE /* SceneDelegate.swift in Sources */,
+				B128E3BD26D80088008DEAEE /* ContactInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

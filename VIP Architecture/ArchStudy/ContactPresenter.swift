@@ -9,11 +9,19 @@
 
 import Foundation
 
+protocol ContactPresenting: AnyObject {
+    var viewController: ContactDisplaing? { get set }
+}
+
 final class ContactPresenter {
-    var viewController: ContactViewController?
-    private let coordinator: ContactCoordinator
+    weak var viewController: ContactDisplaing?
+    private let coordinator: ContactCoordinating
     
-    init(coordinator: ContactCoordinator) {
+    init(coordinator: ContactCoordinating) {
         self.coordinator = coordinator
     }
+}
+
+extension ContactPresenter: ContactPresenting {
+    
 }
