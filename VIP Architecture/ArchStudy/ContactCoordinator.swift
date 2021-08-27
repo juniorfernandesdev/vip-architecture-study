@@ -11,6 +11,7 @@ import UIKit
 enum ContactAction {
     case openForm
     case closeFlow
+    case errorScreen(errorViewController: ErrorViewController)
 }
 
 protocol ContactCoordinating: AnyObject {
@@ -29,6 +30,8 @@ extension ContactCoordinator: ContactCoordinating {
             viewController?.navigationController?.pushViewController(ViewController(), animated: true)
         case.closeFlow:
             viewController?.dismiss(animated: true)
+        case .errorScreen(let erroViewController):
+            viewController?.present(erroViewController, animated: true)
         }
     }
 }

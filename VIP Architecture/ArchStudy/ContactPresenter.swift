@@ -11,6 +11,9 @@ import Foundation
 
 protocol ContactPresenting: AnyObject {
     var viewController: ContactDisplaing? { get set }
+    func presentLoading(isLoading: Bool)
+    func present(contact: [Contact])
+    func presentError()
 }
 
 final class ContactPresenter {
@@ -23,5 +26,16 @@ final class ContactPresenter {
 }
 
 extension ContactPresenter: ContactPresenting {
+    func presentLoading(isLoading: Bool) {
+        isLoading ? viewController?.displayHide() : viewController?.displayLoading()
+    }
     
+    func present(contact: [Contact]) {
+        viewController?.display(contact: contact)
+    }
+    
+    func presentError() {
+        let errorViewController = ErrorViewController()
+        coordinator.perform(action: .errorScreen(errorViewController: errorViewController))
+    }
 }

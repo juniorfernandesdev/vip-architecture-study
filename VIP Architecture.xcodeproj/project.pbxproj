@@ -21,6 +21,7 @@
 		B128E3C126D80864008DEAEE /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C026D80864008DEAEE /* ContactPresenter.swift */; };
 		B128E3C326D80B7D008DEAEE /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C226D80B7D008DEAEE /* ContactCoordinator.swift */; };
 		B128E3C526D80D8F008DEAEE /* ContactFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C426D80D8F008DEAEE /* ContactFactory.swift */; };
+		B128E3C726D9787C008DEAEE /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E3C626D9787B008DEAEE /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B128E3C026D80864008DEAEE /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
 		B128E3C226D80B7D008DEAEE /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
 		B128E3C426D80D8F008DEAEE /* ContactFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFactory.swift; sourceTree = "<group>"; };
+		B128E3C626D9787B008DEAEE /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				B128E3C026D80864008DEAEE /* ContactPresenter.swift */,
 				B128E3C226D80B7D008DEAEE /* ContactCoordinator.swift */,
 				B128E3C426D80D8F008DEAEE /* ContactFactory.swift */,
+				B128E3C626D9787B008DEAEE /* ErrorViewController.swift */,
 			);
 			path = ArchStudy;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B128E3C326D80B7D008DEAEE /* ContactCoordinator.swift in Sources */,
 				B128E3C126D80864008DEAEE /* ContactPresenter.swift in Sources */,
 				B128E38A26D7FD99008DEAEE /* AppDelegate.swift in Sources */,
+				B128E3C726D9787C008DEAEE /* ErrorViewController.swift in Sources */,
 				B128E38C26D7FD99008DEAEE /* SceneDelegate.swift in Sources */,
 				B128E3BD26D80088008DEAEE /* ContactInteractor.swift in Sources */,
 			);

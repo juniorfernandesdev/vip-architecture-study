@@ -2,7 +2,9 @@ import Foundation
 import UIKit
 
 protocol ContactDisplaing: AnyObject {
-    func displaing(contacts: [String])
+    func displayLoading()
+    func displayHide()
+    func display(contact: [Contact])
 }
 
 final class ContactViewController: UIViewController {
@@ -26,7 +28,15 @@ final class ContactViewController: UIViewController {
 
 
 extension ContactViewController: ContactDisplaing {
-    func displaing(contacts: [String]) {
-        print("")
+    func displayHide() {
+        //parar loading
+    }
+    
+    func displayLoading() {
+        //mostrar loading
+    }
+    
+    func display(contact: [Contact]) {
+        //
     }
 }

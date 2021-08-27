@@ -24,6 +24,17 @@ final class ContactInteractor {
 
 extension ContactInteractor: ContactInteracting {
     func fetchContact() {
-        print("request API")
+        presenter.presentLoading(isLoading: false)
+        
+        service.fetchContact { [weak self] result in
+            self?.presenter.presentLoading(isLoading: true)
+            
+            switch result {
+            case .success(let contact):
+                self?.presenter.present(contact: contact)
+            case .failure(_):
+                self?.presenter.presentError()
+            }
+        }
     }
 }
